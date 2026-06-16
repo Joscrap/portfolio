@@ -10,7 +10,11 @@
         }
 
         body{
-            background-color:#22A1BF;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
 
@@ -19,28 +23,76 @@
             justify-content: center; 
             align-items: center; 
             position: relative; 
-            padding: 20px; 
+            padding: 30px 20px;
+            background-color: #1e1e1e;
         }
-        .h1 {
-            margin: 0; 
+        header h1 {
+            margin: 0;
+            color: #ffffff;
         }
 
-        .p {
+        header p {
             position: absolute; 
             right: 20px; 
             margin: 0;
         }
 
-        footer{
+        header a:hover {
+            text-decoration: underline;
+        }
+        
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        
+        section {
+            max-width: 800px;
+            text-align: left;
+            background-color: #2e2e2e;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 1); /* Ombre */
+        }
+
+        section h2 {
+            color: #d4d4d4;
+            margin-top: 0;
+        }
+
+        section p {
+            line-height: 1.6; /* Donne plus d'espace entre les lignes */
+        }
+
+        
+        .projet-img {
+            display: block;
+            margin: 30px auto 10px auto; /* Centre l'image */
+            max-width: 100%; /* Rend l'image responsive (s'adapte à l'écran) */
+            border-radius: 8px;
+            border: 1px solid #333;
+            transition: transform 0.4s ease; /* zoom */
+        }
+
+        /* Effet zoom quand on passe la souris sur l'image */
+        .projet-img:hover {
+            transform: scale(1.02);
+        }
+
+        footer {
             text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 0.9em;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1 class="h1"> Bienvenue sur le site de joris ! </h1>
-        <p class="p"><a href="index.html">← Retour à l'accueil </a> </p>
+        <h1> Bienvenue sur le site de joris ! </h1>
+        <p><a href="index.html">← Retour à l'accueil </a> </p>
 
     </header>
 
@@ -51,7 +103,9 @@
             <p>je m'appelle joris, j'habite dans un trou paumé et je sais coder en HTML, CSS, JavaScript, python et lua  </p>
             <p>Je suis passionné par le développement web et j'aime créer des projets qui combinent créativité et fonctionnalité. J'ai travaillé sur plusieurs projets personnels et professionnels, et je suis toujours à la recherche de nouvelles opportunités pour apprendre et grandir en tant que développeur.</p>
             <p>voici quelques-uns de mes projets :</p>
-            <a href="https://ta-faim.onrender.com/"><img src="Capture d'écran 2026-06-15 153142.png" width="700"></a>
+            <a href="https://ta-faim.onrender.com/" target="_blank">
+                <img class="projet-img" src="Capture d'écran 2026-06-15 153142.png" alt="Aperçu du projet Ta Faim" width="700">
+            </a>
         </section>
     </main>
 
