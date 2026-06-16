@@ -11,26 +11,40 @@
 
         body{
             background-color:#22A1BF;
-            border: 100px;
         }
 
-        .color{
-            background-color:#ffffff;
-        }
 
-        header{
+        header {
             display: flex;
+            justify-content: center; 
+            align-items: center; 
+            position: relative; 
+            padding: 20px; 
+        }
+        .h1 {
+            margin: 0; 
+        }
+
+        .p {
+            position: absolute; 
+            right: 20px; 
+            margin: 0;
+        }
+
+        footer{
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1> Bienvenue sur le site de joris ! </h1>
-        <p><a href="index.html">← Retour à l'accueil </a> </p>
+        <h1 class="h1"> Bienvenue sur le site de joris ! </h1>
+        <p class="p"><a href="index.html">← Retour à l'accueil </a> </p>
+
     </header>
 
-    <main class="color">
+    <main>
         <!-- Ta présentation -->
         <section>
             <h2>À propos de moi :</h2>
