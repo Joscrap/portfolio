@@ -80,6 +80,34 @@
             transform: scale(1.02);
         }
 
+        /* On place le bouton à droite du header */
+        .p-retour {
+            position: absolute; 
+            right: 20px; 
+            margin: 0;
+        }   
+
+        /* Le style du bouton */
+        .btn-retour {
+            display: inline-block; /* Permet d'appliquer des marges et du padding */
+            padding: 8px 16px;
+            color: #22A1BF;
+            text-decoration: none; /* Enlève la ligne sous le lien */
+            font-weight: bold;
+            border: 1.5px solid #22A1BF;
+            border-radius: 25px; 
+            transition: all 0.3s ease;
+        }
+
+        /* L'effet quand on passe la souris dessus (hover) */
+        .btn-retour:hover {
+            background-color: #22A1BF;
+            color: #121212;
+            text-decoration: none;
+            transform: translateX(-5px); /* Le bouton se décale */
+            box-shadow: 0 4px 10px rgba(34, 161, 191, 0.4); /* Ajoute un petit halo lumineux */
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -92,7 +120,7 @@
 <body>
     <header>
         <h1> Bienvenue sur le site de joris ! </h1>
-        <p><a href="index.html">← Retour à l'accueil </a> </p>
+        <p class="p-retour"><a href="index.html" class="btn-retour">← Retour à l'accueil </a> </p>
 
     </header>
 
