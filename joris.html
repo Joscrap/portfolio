@@ -4,13 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio - joris </title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+
+        body{
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        header {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            position: relative; 
+            padding: 30px 20px;
+            background-color: #1e1e1e;
+        }
+        header h1 {
+            margin: 0;
+            color: #ffffff;
+        }
+
+        header p {
+            position: absolute; 
+            right: 20px; 
+            margin: 0;
+        }
+        
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        
+        section {
+            text-align: center;
+            max-width: 800px;
+            text-align: left;
+            background-color: #2e2e2e;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 1); /* Ombre */
+        }
+
+        section h2 {
+            color: #d4d4d4;
+            margin-top: 0;
+        }
+
+        section p {
+            line-height: 1.6; /* Donne plus d'espace entre les lignes */
+        }
+
+        
+        .projet-img {
+            display: block;
+            margin: 30px auto 10px auto; /* Centre l'image */
+            max-width: 100%; /* Rend l'image responsive (s'adapte à l'écran) */
+            border-radius: 8px;
+            border: 1px solid #333;
+            transition: transform 0.4s ease; /* zoom */
+        }
+
+        /* Effet zoom quand on passe la souris */
+        .projet-img:hover {
+            transform: scale(1.02);
+        }
+
+        /* On place le bouton à droite du header */
+        .p-retour {
+            position: absolute;
+            right: 20px;
+            margin: 0;
+        }
+
+        .btn-retour {
+            display: inline-block; /* Permet d'appliquer des marges et du padding */
+            padding: 8px 16px;
+            color: #22A1BF;
+            text-decoration: none; /* Enlève la ligne sous le lien */
+            font-weight: bold;
+            border: 1.5px solid #22A1BF;
+            border-radius: 25px; 
+            transition: all 0.3s ease;
+        }
+
+        /* L'effet quand on passe la souris dessus (hover) */
+        .btn-retour:hover {
+            background-color: #22A1BF;
+            color: #121212;
+            text-decoration: none;
+            transform: translateX(-5px); /* Le bouton se décale */
+            box-shadow: 0 4px 10px rgba(34, 161, 191, 0.4); /* Ajoute un petit halo lumineux */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <h1> Bienvenue sur le site de joris ! </h1>
-        <p><a href="index.html">← Retour à l'accueil </a> </p>
+        <p class="p-retour"><a href="index.html" class="btn-retour">← Retour à l'accueil </a> </p>
+
     </header>
 
     <main>
@@ -20,7 +124,9 @@
             <p>je m'appelle joris, j'habite dans un trou paumé et je sais coder en HTML, CSS, JavaScript, python et lua  </p>
             <p>Je suis passionné par le développement web et j'aime créer des projets qui combinent créativité et fonctionnalité. J'ai travaillé sur plusieurs projets personnels et professionnels, et je suis toujours à la recherche de nouvelles opportunités pour apprendre et grandir en tant que développeur.</p>
             <p>voici quelques-uns de mes projets :</p>
-            <a href="https://ta-faim.onrender.com/"><img src="Capture d'écran 2026-06-15 153142.png" width="700"></a>
+            <a href="https://ta-faim.onrender.com/" target="_blank">
+                <img class="projet-img" src="Capture d'écran 2026-06-15 153142.png" alt="Aperçu du projet Ta Faim" width="700">
+            </a>
         </section>
     </main>
 
