@@ -1,0 +1,43 @@
+header h1 {
+    color: #ffffff;
+    text-align: center  ;
+    margin-top: 50px;
+    border-width:30px;
+    border-style:solid;
+    border-color:black;
+    background-color: #000000;
+    border-radius: 20px;
+
+}
+main {
+    color: #ffffff;
+ }   
+body {
+    background: linear-gradient(rgb(39, 87, 150), rgb(82, 31, 116));
+    
+  }
+button {
+    border-radius: 70px;
+    }
+    .mon-bouton-ovale {
+  display: inline-block;
+  padding: 10px 24px;       
+  font-family: 'Roboto', sans-serif; 
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;         
+  background-color: transparent;
+  border: 1px solid #000000; 
+  border-radius: 100px;    
+  text-decoration: none;   
+  transition: background-color 0.2s, border-color 0.2s;
+}
+.mon-bouton-ovale:hover {
+  background-color: #070707;
+  border-color: #ffffff;
+}
+section{
+  border-radius: 30px;
+  background-color: #000000;
+  text-align: center;
+}
