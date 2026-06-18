@@ -1,31 +1,60 @@
 header h1 {
-    color: #ffffff;
-    text-align: center  ;
-    margin-top: 50px;
-    border-width:30px;
-    border-style:solid;
-    border-color:black;
-    background-color: #000000;
-    border-radius: 20px;
+    color: #45773a;
+    text-align: center;
+   font-family: "Goudy Bookletter 1911", inherit ;
 
+}
+.bouton-accueil {
+     font-size: 18px;
+    background: #45773a; 
+    border: none;
+    border-radius: 100px;
+    padding: 5px 12px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.1s ease;
+    text-decoration: none;
+    margin-top: 5px;
+}
+.bouton-accueil:hover {
+    background-color: #fa15d4;
+  border-color: #000000;
+    
+}
+article {
+    text-align: right;
+    margin-top: 15px;
 }
 main {
     color: #ffffff;
  }   
 body {
-    background: linear-gradient(rgb(39, 87, 150), rgb(82, 31, 116));
-    
-  }
+    background-color: #e0e2c1;
+ }
 button {
-    border-radius: 70px;
-    }
+    display: inline-block;
+  padding: 20px 48px;       
+  font-family: 'Alice', sans-serif; 
+  font-size: 14px;
+  font-weight: 200;
+  color: #000000;         
+  background-color: transparent;
+  border: 1px solid #000000; 
+  border-radius: 100px;    
+  text-decoration: none;   
+  transition: background-color 0.2s, border-color 0.2s;
+}
+button:hover {
+  background-color: #fa15d4;
+  border-color: #000000;
+}
     .mon-bouton-ovale {
   display: inline-block;
   padding: 10px 24px;       
   font-family: 'Roboto', sans-serif; 
   font-size: 14px;
   font-weight: 500;
-  color: #ffffff;         
+  color: #000000;         
   background-color: transparent;
   border: 1px solid #000000; 
   border-radius: 100px;    
@@ -33,11 +62,48 @@ button {
   transition: background-color 0.2s, border-color 0.2s;
 }
 .mon-bouton-ovale:hover {
-  background-color: #070707;
-  border-color: #ffffff;
+  background-color: #3348ff;
+  border-color: #000000;
 }
 section{
-  border-radius: 30px;
-  background-color: #000000;
+    text-align: center;
+    background-color: #45773a;
+    border-radius: 20px;
+    }
+footer {
   text-align: center;
+}
+#like-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#like-btn {
+    font-size: 28px;
+    background: #45773a; 
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.1s ease;
+}
+
+#like-btn:active {
+    transform: scale(1.2);
+}
+
+/* Animation des likes qui s'envolent */
+.like-float {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    font-size: 24px;
+    animation: floatUp 1s ease-out forwards;
+}
+
+@keyframes floatUp {
+    0% { opacity: 1; transform: translateY(0) scale(1); }
+    100% { opacity: 0; transform: translateY(-120px) scale(1.8); }
 }
