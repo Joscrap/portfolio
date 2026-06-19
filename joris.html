@@ -38,11 +38,10 @@
             display: flex;
             padding: 40px 20px;
             flex-direction: column;
-            place-items: center;
+            align-items: center;
         }
         
         section {
-            text-align: center;
             max-width: 800px;
             text-align: left;
             padding: 30px;
@@ -112,18 +111,32 @@
             box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4); 
         }
 
+        .semaine {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .p-jour{
+            flex: 1 1 200px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 0;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
-            color: #888;
+            color: #ebebeb;
             font-size: 0.9em;
         }
 
         /* État de départ : caché et légèrement descendu */
         .animate-on-scroll {
             opacity: 0;
-            transform: scale(0.3);
-            transition: opacity 2s ease-out, transform 1s ease-out;
+            transform: scale(0.8);
+            transition: opacity 1s ease-out, transform 0.6s ease-out;
         }
 
         /* État final : visible et à sa position d'origine */
@@ -165,21 +178,23 @@
             <h2>Mon stage de seconde chez Epitech</h2>
         
             <h3>Semaine 1</h3>
+
+            <div class="semaine">
+                <p class="p-jour"><strong>Lundi :</strong> Ma semaine a commencé par une matinée d'accueil , suivie d'un jeux "ice breaker" pour faire connaissance avec les autres stagiaires. L'après-midi a été entièrement consacrée au lancement et au développement de ce projet de Web Portfolio.</p>
         
-            <p><strong>Lundi :</strong> Ma semaine a commencé par une matinée d'accueil , suivie d'un jeux "ice breaker" pour faire connaissance avec les autres stagiaires. L'après-midi a été entièrement consacrée au lancement et au développement de ce projet de Web Portfolio.</p>
+                <p class="p-jour"><strong>Mardi :</strong> La journée a débuté par l'accueil habituel avant de suivre une conférence dédiée à la cybersécurité. L'après-midi s'est avérée très ludique avec l'activité "Vie ma vie d'enquêteur OSINT", où nous avons relevé des défis de type CTF (Capture The Flag) et joué à Geoguessr.</p>
+   
+                <p class="p-jour"><strong>Mercredi :</strong>le matin j'ai assisté à une conférence passionnante sur l'IA. La fin de matinée s'est poursuivie avec une activité intitulée "Poké Poireau" où nous avons dévelloper l'IA de notre Poireau de combat. Enfin, j'ai passé toute l'après-midi à découvrir et pratiquer les bases de l'algorithmie avec un défie de cryptogrphie.</p>
         
-            <p><strong>Mardi :</strong> La journée a débuté par l'accueil habituel avant de suivre une conférence dédiée à la cybersécurité. L'après-midi s'est avérée très ludique avec l'activité "Vie ma vie d'enquêteur OSINT", où nous avons relevé des défis de type CTF (Capture The Flag) et joué à Geoguessr.</p>
+                <p class="p-jour"><strong>Jeudi :</strong> La matinée a commencé par une conférence "Apprendre à Apprendre". Nous avons ensuite enchaîné sur un "Atelier Canard" pour faire le lien avec le thème aborder dans la conférence. L'après-midi était technique avec une initiation pratique à l'électronique et à la programmation sur des cartes Arduino.</p>
         
-            <p><strong>Mercredi :</strong>le matin j'ai assisté à une conférence passionnante sur l'IA. La fin de matinée s'est poursuivie avec une activité intitulée "Poké Poireau" où nous avons dévelloper l'IA de notre Poireau de combat. Enfin, j'ai passé toute l'après-midi à découvrir et pratiquer les bases de l'algorithmie avec un défie de cryptogrphie.</p>
-        
-            <p><strong>Jeudi :</strong> La matinée a commencé par une conférence "Apprendre à Apprendre". Nous avons ensuite enchaîné sur un "Atelier Canard" pour faire le lien avec le thème aborder dans la conférence. L'après-midi était technique avec une initiation pratique à l'électronique et à la programmation sur des cartes Arduino.</p>
-        
-            <p><strong>Vendredi :</strong> Cette dernière journée de la semaine s'est déroulée entièrement à distance. J'ai attaqué la matinée par un module de travail en ligne sur l'Intelligence Artificielle (IA). J'ai ensuite conclu cette première semaine de stage en travaillant de chez moi sur la finalisation de mon Portfolio.</p>
+                <p class="p-jour"><strong>Vendredi :</strong> Cette dernière journée de la semaine s'est déroulée entièrement à distance. J'ai attaqué la matinée par un module de travail en ligne sur l'Intelligence Artificielle (IA). J'ai ensuite conclu cette première semaine de stage en travaillant de chez moi sur la finalisation de mon Portfolio.</p>
+            </div>
         </section>
     </main>
 
     <footer class="animate-on-scroll">
-        <p>© 2026 - joris | Fait avec passion et hardeur</p>
+        <p>© 2026 - joris | Fait avec passion et ardeur</p>
     </footer>
 
     <script>
