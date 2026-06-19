@@ -45,7 +45,7 @@ h1 {
 }
 
 .section-7 {
-    background-color: #200040;
+    background-color: #262020;
     color: #ffffff;
     margin: 0;
 }
@@ -54,7 +54,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     color: #ffffff;
-    background-color: #221e1e;
+    background-color: #262020;
     font-size: 20px;
 }
 header {
@@ -79,7 +79,62 @@ li {
 }
 ul {
     text-align: center;
+}  
+.section-15 {
+    background-color: #272626;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgb(63, 63, 63);
+    border-radius: 20px;
 }
-.section_15{
-   
+.section-16 {
+    background-color: #272626;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 10px;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgb(63, 63, 63);
+    border-radius: 20px;
 }
+.section-17 {
+    background-color: #272626;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 10px;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgb(63, 63, 63);
+    border-radius: 20px;
+}
+.btn-retour {
+    display: inline-block; /* Permet d'appliquer des marges et du padding */
+    padding: 8px 16px;
+    color: #22A1BF;
+    text-decoration: none; /* Enlève la ligne sous le lien */
+    font-weight: bold;
+    border: 1.5px solid #22A1BF;
+    border-radius: 25px; 
+}
+.btn-retour:hover {
+            background-color: #22A1BF;
+            color: #121212;
+            text-decoration: none;
+            transform: translateX(-5px); /* Le bouton se décale */
+            box-shadow: 0 4px 10px rgba(34, 161, 191, 0.4); /* Ajoute un petit halo lumineux */
+}
+.btn-jsp1, .btn-jsp2, .btn-jsp3 {
+    display: inline-block; /* Permet d'appliquer des marges et du padding */
+    padding: 8px 16px;
+    color: #22A1BF;
+    text-decoration: none; /* Enlève la ligne sous le lien */
+    font-weight: bold;
+    border: 1.5px solid #22A1BF;
+    border-radius: 25px; 
+}
+.btn-jsp1:hover, .btn-jsp2:hover, .btn-jsp3:hover {
+            background-color: #22A1BF;
+            color: #121212;
+            text-decoration: none;
+            transform: translateX(-5px); /* Le bouton se décale */
+            box-shadow: 0 4px 10px rgba(34, 161, 191, 0.4); /* Ajoute un petit halo lumineux */
