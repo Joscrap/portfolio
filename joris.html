@@ -9,9 +9,10 @@
         body{
             background-color: #1e1e1e;
             color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'JetBrains Mono', 'Fira Code', 'Segoe UI', Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(135deg, #1e1e1e, #424242);
         }
 
 
@@ -21,11 +22,11 @@
             align-items: center; 
             position: relative; 
             padding: 30px 20px;
-            background-color: #1e1e1e;
         }
         header h1 {
             margin: 0;
             color: #ffffff;
+            font-size: 2.5rem;
         }
 
         header p {
@@ -36,27 +37,32 @@
         
         main {
             display: flex;
-            justify-content: center;
             padding: 40px 20px;
+            flex-direction: column;
+            place-items: center;
         }
         
         section {
             text-align: center;
             max-width: 800px;
             text-align: left;
-            background-color: #2e2e2e;
+            background-color: #2d2d30;
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 1); /* Ombre */
+            box-shadow: 0 4px 15px #252526; /* Ombre */
+            margin: 18px;
         }
 
         section h2 {
             color: #d4d4d4;
             margin-top: 0;
+            font-size: 1.8rem;
+            font-weight: 700;
         }
 
         section p {
             line-height: 1.6; /* Donne plus d'espace entre les lignes */
+            font-weight: 400;
         }
 
         
@@ -118,23 +124,44 @@
     </header>
 
     <main>
-        <!-- Ta présentation -->
         <section>
-            <h2>À propos de moi :</h2>
-            <p>je m'appelle joris, j'habite dans un trou paumé et je sais coder en HTML, CSS, JavaScript, python et lua  </p>
-            <p>Je suis passionné par le développement web et j'aime créer des projets qui combinent créativité et fonctionnalité. J'ai travaillé sur plusieurs projets personnels et professionnels, et je suis toujours à la recherche de nouvelles opportunités pour apprendre et grandir en tant que développeur.</p>
-            <p>voici quelques-uns de mes projets :</p>
+            <h2>À propos de moi</h2>
+            <p>Je m'appelle Joris. Passionné par l'informatique, je maîtrise déjà plusieurs langages de programmation tels que le HTML, le CSS, JavaScript, Python et Lua.</p>
+            <p>Le développement web me passionne particulièrement : j'aime créer des projets uniques qui combinent créativité et fonctionnalité. Toujours curieux et à la recherche de nouvelles opportunités pour apprendre, j'adore concevoir des outils et relever de nouveaux défis techniques.</p>
+        </section>
+
+        <section>
+            <h2>Mes projets</h2>
+            <p>Voici un aperçu de quelques-uns de mes projets personnels :</p>
+        
             <a href="https://ta-faim.onrender.com/" target="_blank">
                 <img class="projet-img" src="Capture d'écran 2026-06-15 153142.png" alt="Aperçu du projet Ta Faim" width="700">
             </a>
+        
             <a href="https://site-vitrine-bay.vercel.app/" target="_blank">
-                <img class="projet-img" src="Capture d'écran 2026-06-17 163029.png" alt="Aperçu du projet Ta Faim" width="700">
+                <img class="projet-img" src="Capture d'écran 2026-06-17 163029.png" alt="Aperçu du projet de site vitrine" width="700">
             </a>
+        </section>
+
+        <section>
+            <h2>Mon stage de seconde chez Epitech</h2>
+        
+            <h3>Semaine 1</h3>
+        
+            <p><strong>Lundi :</strong> Ma semaine a commencé par une matinée d'accueil , suivie d'un jeux "ice breaker" pour faire connaissance avec les autres stagiaires. L'après-midi a été entièrement consacrée au lancement et au développement de ce projet de Web Portfolio.</p>
+        
+            <p><strong>Mardi :</strong> La journée a débuté par l'accueil habituel avant de suivre une conférence dédiée à la cybersécurité. L'après-midi s'est avérée très ludique avec l'activité "Vie ma vie d'enquêteur OSINT", où nous avons relevé des défis de type CTF (Capture The Flag) et joué à Geoguessr.</p>
+        
+            <p><strong>Mercredi :</strong>le matin j'ai assisté à une conférence passionnante sur l'IA. La fin de matinée s'est poursuivie avec une activité intitulée "Poké Poireau" où nous avons dévelloper l'IA de notre Poireau de combat. Enfin, j'ai passé toute l'après-midi à découvrir et pratiquer les bases de l'algorithmie avec un défie de cryptogrphie.</p>
+        
+            <p><strong>Jeudi :</strong> La matinée a commencé par une conférence "Apprendre à Apprendre". Nous avons ensuite enchaîné sur un "Atelier Canard" pour faire le lien avec le thème aborder dans la conférence. L'après-midi était technique avec une initiation pratique à l'électronique et à la programmation sur des cartes Arduino.</p>
+        
+            <p><strong>Vendredi :</strong> Cette dernière journée de la semaine s'est déroulée entièrement à distance. J'ai attaqué la matinée par un module de travail en ligne sur l'Intelligence Artificielle (IA). J'ai ensuite conclu cette première semaine de stage en travaillant de chez moi sur la finalisation de mon Portfolio.</p>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 - joris | Fait avec passion </p>
+        <p>© 2026 - joris | Fait avec passion et hardeur</p>
     </footer>
 
 <script src="script.js"> </script>
