@@ -138,3 +138,4 @@ ul {
             text-decoration: none;
             transform: translateX(-5px); /* Le bouton se décale */
             box-shadow: 0 4px 10px rgba(34, 161, 191, 0.4); /* Ajoute un petit halo lumineux */
+}
