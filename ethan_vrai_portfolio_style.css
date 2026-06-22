@@ -12,12 +12,34 @@ body {
     background-color: #262020;
     font-size: 20px;
 }
-.section-1, .section-2, .section-11, .section-12, .section-13, .section-14, .section-15, .section-111, .section-112, .section-121, .section-122, .section-131, .section-132, .section-141, .section-142, .section-151, .section-152, .section-21, .section-22, .section-23, .section-24, .section-25, .section-211, .section-212, .section-221, .section-222, .section-231, .section-232, .section-241, .section-242, .section-251, .section-252 {
-    background-color: #272626;
+.section-1, .section-2, .section-11, .section-12, .section-13, .section-14, .section-15, .section-21, .section-22, .section-23, .section-24, .section-25 {
     max-width: 800px;
     margin: 20px auto;
     padding: 10px;
     color: #ffffff;
     box-shadow: 0 4px 15px rgb(63, 63, 63);
-    border-radius: 20px;
+    border-radius: 10px;
+
 }
+.section-111, .section-112, .section-121, .section-121, .section-122, .section-131, .section-132, .section-141, .section-142, .section-151, .section-152, .section-211, .section-212, .section-221, .section-222, .section-231, .section-232, .section-241, .section-242, .section-251, .section-252 {
+    background-color: #272626; 
+    background-color: #272626;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgb(63, 63, 63);
+    border-radius: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.animate-on-scroll {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 1s ease-out, transform 0.6s ease-out;
+        }
+
+.animate-on-scroll.visible {
+            opacity: 1;
+            transform: scale(1);
+        }

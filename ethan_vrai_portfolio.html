@@ -16,16 +16,20 @@
 </header>
 
 <main>
-    <section class="section-1">
+    <section class="section-1 animate-on-scroll">
         <h1>Semaine 1</h1>
         
-        <Section class="section-11">
+        <Section class="section-11 ">
             <h2>lundi</h2>
             <section class="section-111">
                 <h3>Matinée</h3>
+                <p>La première matinée débute avec un IceBreaker pour apprendre à nous connaître, puis, à l'installation des applications pour le reste de la semaine </p>
+                <img src="./image.png" alt="IceBreaker" width="280">
+                <img src="./image.png" alt="IceBreaker" width="280">
             </section class="section-111">
             <section class="section-112">
                 <h3>Après-midi</h3>
+                <p>Nous débutons le projet du stage : <strong>le Portfolio</strong>. Cette après-midi, nous sommes concentrés sur la base en HTML.</p>
             </section class="section-112">
         </Section class="section-11">
         
@@ -33,9 +37,14 @@
             <h2>mardi</h2>
             <section class="section-121">
                 <h3>Matinée</h3>
+                <p>A partir d'aujourd'hui, les matinées commenceront par une conference. Cette fois, c'est sur la cybersécurité avec Gabriel. Ensuite on doit avancer sur notre Portfolio avec le CSS. </p>
+                <img src="./Kyo_le_Goat.png" alt="CSS" width="280">
             </section class="section-121">
             <section class="section-122">
                 <h3>Après-midi</h3>
+                <p>Nous commencons par un OpenGuessr pour ensuite, continuer sur CTF, où il faut decrypter des codes cryptés grâce à des clés de dechiffrages qu'on doit aussi trouver. </p>
+                <img src="./OpenGuessr.png" alt="OpenGuessr" width="280">
+                <img src="./CTF.png" alt="CTF" width="280">
             </section class="section-122">
         </Section class="section-12">
         
@@ -43,12 +52,17 @@
             <h2>mercredi</h2>
             <section class="section-131">
                 <h3>Matinée</h3>
+                <p>La conférence de la journée porte sur l'IA et les futurs métiers, impactés ou non par l'IA. Ensuite nous jouons à Leek Wars, un jeu dans lequel on doit coder l'IA d'un poireau pour qu'il attaque d'autres poireaux. </p>
+                <img src="./Leek_Wars.png" alt="Leek Wars" width="280">
             </section class="section-131">
             <section class="section-132">
                 <h3>Après-midi</h3>
+                <p><strong>AU SECOURS PAPI CHAMPI A ETE ENLEVE :</strong> nous devons décrypter son message pour le retrouver. Pour cela nous devons coder un decrypteur. Ensuite nous devons utiliser la turtle de Python pour dessiner la fleur de feu de papi champi pour le sauver. </p>
+                <img src="./Papi_Champi.png" alt="Papi" width="280">
+                <iframe width="310" height="215" src="Turtle.mp4" title="Turtle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </section class="section-132">
         </Section class="section-13">
-        
+
         <Section class="section-14">
             <h2>jeudi</h2>
             <section class="section-141">
@@ -71,7 +85,7 @@
     </section class="section-1">
     
     
-    <section class="section-2">
+    <section class="section-2 animate-on-scroll">
         <h1>Semaine 2</h1>
         
         <section class="section-21">
@@ -127,6 +141,24 @@
     <p>© 2026 - Ethan | Fait à la sueur de mon cou <a href="ethan.html">.</a></p>
 </footer>
 
-    <script src="script.js"> </script>
+ <script>
+        const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+      
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, {
+            threshold: 0.1 
+        });
+
+        elementsToAnimate.forEach((element) => {
+            observer.observe(element);
+        });
+    </script>
 </body>
 </html>
