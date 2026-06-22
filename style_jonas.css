@@ -14,7 +14,7 @@ body {
 .image_1{
     margin: 50px;
     border-radius: 30px;
-    padding-left: 10px;
+    padding: 10%;
 
 }
 .section_1{
@@ -191,4 +191,7 @@ header p{
 }
 .section_3 p{
     margin-left: 4px;
+}
+.div_img{
+    margin-right: 10px;
 }
