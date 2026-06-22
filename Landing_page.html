@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlueWave - Agis pour les océans</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5fbff;
+    color:#0f172a;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:800;
+    color:#0284c7;
+}
+
+nav a{
+    text-decoration:none;
+    color:#334155;
+    margin-left:25px;
+    font-weight:500;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:120px 8% 80px;
+    background:linear-gradient(135deg,#0284c7,#06b6d4);
+    color:white;
+}
+
+.hero-text{
+    max-width:600px;
+}
+
+.hero-text h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:white;
+    color:#0284c7;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+    margin-left:15px;
+}
+
+.hero-image{
+    font-size:12rem;
+}
+
+.stats{
+    padding:80px 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.stat{
+    background:white;
+    padding:35px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.stat h2{
+    color:#0284c7;
+    font-size:2.5rem;
+}
+
+.section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.5rem;
+    color:#0f172a;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card span{
+    font-size:3rem;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.join{
+    background:linear-gradient(135deg,#0284c7,#06b6d4);
+    color:white;
+    text-align:center;
+    border-radius:30px;
+    margin:80px 8%;
+    padding:70px 20px;
+}
+
+.join h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.join p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.form{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.form input{
+    padding:15px;
+    border:none;
+    border-radius:50px;
+    width:300px;
+}
+
+.form button{
+    padding:15px 30px;
+    border:none;
+    border-radius:50px;
+    background:#0f172a;
+    color:white;
+    cursor:pointer;
+    font-weight:700;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#64748b;
+}
+
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:3rem;
+    }
+
+    .hero-image{
+        margin-top:40px;
+        font-size:8rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">🌊 BlueWave</div>
+    <nav>
+        <a href="#">Actions</a>
+        <a href="#">Bénévolat</a>
+        <a href="#">Événements</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Les océans ont besoin de toi.</h1>
+        <p>
+            Rejoins des centaines de jeunes bénévoles qui agissent chaque semaine
+            pour nettoyer les plages, protéger la biodiversité marine et sensibiliser
+            le public à la pollution des océans.
+        </p>
+
+        <a href="#" class="btn btn-primary">Je rejoins l'association</a>
+        <a href="#" class="btn btn-secondary">Découvrir nos actions</a>
+    </div>
+
+    <div class="hero-image">
+        🌊
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stat">
+        <h2>12 500+</h2>
+        <p>kg de déchets retirés</p>
+    </div>
+
+    <div class="stat">
+        <h2>850</h2>
+        <p>bénévoles actifs</p>
+    </div>
+
+    <div class="stat">
+        <h2>42</h2>
+        <p>plages nettoyées</p>
+    </div>
+
+    <div class="stat">
+        <h2>95%</h2>
+        <p>de jeunes de 15 à 25 ans</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-title">
+        <h2>Des actions concrètes</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <span>🧹</span>
+            <h3>Nettoyages de plages</h3>
+            <p>
+                Chaque mois, nos équipes se mobilisent pour retirer
+                des tonnes de déchets des côtes françaises.
+            </p>
+        </div>
+
+        <div class="card">
+            <span>🐬</span>
+            <h3>Protection de la faune</h3>
+            <p>
+                Participation à des programmes de suivi et de protection
+                des espèces marines menacées.
+            </p>
+        </div>
+
+        <div class="card">
+            <span>🎤</span>
+            <h3>Sensibilisation</h3>
+            <p>
+                Interventions dans les lycées et événements pour
+                informer les jeunes sur les enjeux environnementaux.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="join">
+    <h2>Deviens bénévole aujourd'hui</h2>
+
+    <p>
+        Pas besoin d'expérience. Il suffit d'avoir envie d'agir.
+        En moins d'une minute, inscris-toi et participe à ta première
+        action près de chez toi.
+    </p>
+
+    <form class="form">
+        <input type="email" placeholder="Ton adresse e-mail">
+        <button type="submit">Adhérer gratuitement</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 BlueWave • Ensemble, protégeons les océans.
+</footer>
+
+</body>
+</html>
