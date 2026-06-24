@@ -4,7 +4,10 @@ header h1 {
     font-family :'Helvetica', Serif , monospace;
     font-size: 100px;
     margin-top: 10px;
-    border : #000000;
+    border-left: 20px #45773a double
+    padding-left: 20px ; 
+
+
 
 }
 
@@ -21,22 +24,21 @@ header h1 {
     transition: transform 0.1s ease;
     text-decoration: none;
     margin-top: 1px;
-    transition: background-color 0.5s, color 0.5s ;
+    transition: background-color 0.5s, color 0.5s ; 
 }
 
 
 
 .bouton-accueil:hover {
     background-color: #4154fd;
-  border-color: #000000;
- transform: scale(1.2);
  cursor: pointer;
+ transform: translateX(-10px); 
     
 }
 
 
 
-article {
+aside {
     text-align: right;
     margin-top: 15px;
 }
@@ -61,7 +63,7 @@ section{
     height: 5000px;
     width: 1000px;
     margin-top: 250px;
-    margin-left: 430px;
+    margin-left: 380px;
     }
 
 section h2 {
@@ -77,6 +79,7 @@ article h4 {
     font-family:'Century Gothic', sans-serif, monospace;
    text-align: left;
    margin-top: 60px;
+   margin-left: 10px;
    font-size: 18px;
 }
 
@@ -143,4 +146,5 @@ footer {
 main h2 {
     margin-top: -150px;
 }
+
 

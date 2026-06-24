@@ -15,3 +15,4 @@ btn.addEventListener("click", () => {
         float.remove();
     }, 1000);
 });
+
