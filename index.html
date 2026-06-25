@@ -4,85 +4,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolios</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <style>
-        body{
-            background-color: #1e1e1e;
-            color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-
-        header {
-            display: flex;
-            justify-content: center; 
-            align-items: center; 
-            position: relative; 
-            padding: 30px 20px;
-            background-color: #1e1e1e;
-        }
-        header h1 {
-            margin: 0;
-            color: #ffffff;
-        }
-
-        main {
-            display: flex;
-            justify-content: center;
-            padding: 40px 20px;
-        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         
         section {
+            padding: 120px;
+        }
+
+        body {
+            background: #141414;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+        }
+ 
+        .jsp {
             text-align: center;
-            max-width: 800px;
-            text-align: left;
-            background-color: #2e2e2e;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 1); /* Ombre */
+            padding: 4rem 2rem 2.5rem;
+        }
+ 
+        .tag {
+            display: inline-block;
+            font-size: 11px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #888;
+            border: 0.5px solid #333;
+            border-radius: 20px;
+            padding: 4px 14px;
+            margin-bottom: 1.5rem;
+            font-size: 11px;
+            color: #555;
+            background: #222;
+            border: 0.5px solid #2a2a2a;
+            border-radius: 20px;
+            padding: 3px 10px;
+        }
+ 
+        .h1 {
+            font-size: 26px;
+            font-weight: 500;
+            color: #f0f0f0;
+            line-height: 1.35;
+            max-width: 520px;
+            margin: 0 auto 0.75rem;
+        }
+ 
+ 
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            background: #222;
+            max-width: 720px;
+            margin: 0 auto;
+            border: 1px solid #222;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+ 
+        .card {
+            background: #1a1a1a;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            cursor: pointer;
+            transition: background 0.15s;
+            text-decoration: none;
+            position: relative;
+        }
+ 
+        .card:hover { background: #1f1f1f; }
+ 
+        .card-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 500;
+        }
+ 
+        .av-j  { 
+            background: #1e2d4a; 
+            color: #5b9bd5; 
+        }
+        
+        .av-e  { 
+            background: #1e3a2a; 
+            color: #5bc47a; 
         }
 
-        section h2 {
-            color: #d4d4d4;
-            margin-top: 0;
+        .av-jo { 
+            background: #2d1e3a; 
+            color: #9b5bd5; 
         }
 
-        a{
-           text-decoration: none;
-           color: rgb(134, 132, 132);
+        .av-l  { 
+            background: #3a2a1e; 
+            color: #d5915b; 
+        }
+ 
+        .card-name { 
+            font-size: 17px; 
+            font-weight: 500; 
+            color: #e8e8e8; 
         }
 
+        .card-role { 
+            font-size: 13px; 
+            color: #555; 
+            margin-top: 2px; 
+        }
+ 
+        .card-flèche {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            font-size: 18px;
+            color: #333;
+            transition: color 0.15s, transform 0.15s;
+        }
+ 
+        .card:hover .card-arrow {
+            color: #666;
+            transform: translate(2px, -2px);
+        }
+ 
+        .card-tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-top: auto;
+            padding-top: 0.5rem;
+        }
+ 
         footer {
             text-align: center;
-            padding: 20px;
-            color: #888;
-            font-size: 0.9em;
+            padding: 2.5rem 0;
+            font-size: 12px;
+            color: #444;
+        }
+ 
+        @media (max-width: 520px) {
+            .grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
-
 <body>
-    <header>
-        <h1> Bienvenue sur le site des Portfolios de Joris, Ethan, Jonas et Léon </h1>
-    </header>
-
-    <main>
-        <!-- Ta présentation -->
-        <section>
-            <h2>les portfolios :</h2>
-            <p><a href="joris.html">Page de Joris →</a> </p>
-            <p><a href="ethan_vrai_portfolio.html">Page de Ethan →</a> </p>
-            <p><a href="jonas.html">Page de Jonas →</a> </p>
-            <p><a href="leon.html">Page de Léon →</a> </p>
-        </section>
-    </main>
-
+ 
+    <div class="jsp">
+        <div class="tag">Portfolios · 2026</div>
+        <h1 class="h1">Joris, Ethan, Jonas &amp; Léon</h1>
+    </div>
+    <section>
+        <div class="grid">
+            <a class="card" href="joris.html">
+                <span class="card-flèche"><i class="ti ti-arrow-up-right"></i></span>
+                <div class="card-avatar av-j">J</div>
+                <div>
+                    <div class="card-name">Joris</div>
+                    <div class="card-role">Portfolio</div>
+                </div>
+            </a>
+ 
+            <a class="card" href="ethan_vrai_portfolio.html">
+                <span class="card-flèche"><i class="ti ti-arrow-up-right"></i></span>
+                <div class="card-avatar av-e">E</div>
+                <div>
+                    <div class="card-name">Ethan</div>
+                    <div class="card-role">Portfolio</div>
+               </div>
+            </a>
+ 
+            <a class="card" href="jonas.html">
+                <span class="card-flèche"><i class="ti ti-arrow-up-right"></i></span>
+                <div class="card-avatar av-jo">Jo</div>
+                <div>
+                    <div class="card-name">Jonas</div>
+                    <div class="card-role">Portfolio</div>
+                </div>
+            </a>
+ 
+            <a class="card" href="leon.html">
+                <span class="card-flèche"><i class="ti ti-arrow-up-right"></i></span>
+                <div class="card-avatar av-l">L</div>
+                <div>
+                    <div class="card-name">Léon</div>
+                    <div class="card-role">Portfolio</div>
+                </div>
+            </a>
+        </div>
+    </section>
     <footer>
-        <p>© 2026 - joris | Fait avec passion et ardeur </p>
+        <p>© 2026 — Joris | Fait avec passion et ardeur</p>
     </footer>
-
-<script src="script.js"> </script>
+ 
 </body>
 </html>

@@ -1,0 +1,122 @@
+/* --- Styles globaux --- */
+body {
+    /* Un fond légèrement dégradé pour plus de profondeur */
+    background: linear-gradient(135deg, #121212 0%, #1e1e1e 100%);
+    color: #e0e0e0;
+    font-family: 'Poppins', Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- En-tête --- */
+header {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 2.2em;
+    font-weight: 600;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+    color: #888;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* --- Contenu principal --- */
+main {
+    flex: 1; /* Permet de pousser le footer tout en bas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* --- Carte du menu --- */
+section {
+    background-color: #252525;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    border: 1px solid #333;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+section h2 {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1.4em;
+    font-weight: 400;
+    position: relative;
+}
+
+/* Petit trait décoratif sous le titre */
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #6366f1; /* Couleur d'accentuation (violet/bleu) */
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* --- Boutons de navigation --- */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacement entre les boutons */
+}
+
+a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #2e2e36;
+    color: #e0e0e0;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+/* Effet au survol de la souris */
+a:hover {
+    background-color: #6366f1;
+    color: #ffffff;
+    transform: translateY(-4px); /* Fait légèrement monter le bouton */
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4); /* Ombre colorée */
+    border-color: #818cf8;
+}
+
+a span {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+/* La flèche se décale vers la droite au survol */
+a:hover span {
+    transform: translateX(5px);
+}
+
+/* --- Pied de page --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9em;
+}
