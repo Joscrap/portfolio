@@ -205,7 +205,6 @@
         }
 
         .p-jour{
-            flex: 1 1 200px;
             background: rgba(255, 255, 255, 0.05);
             padding: 15px;
             border-radius: 10px;
@@ -252,3 +251,9 @@
     display: block;
 }
 
+.image_sem {
+    border-radius: 20px;
+    height: 150px;
+    width: 300px;
+    margin-left: 15px;
+}
