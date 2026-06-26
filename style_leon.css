@@ -101,12 +101,6 @@ header h2 {
 }
 
 
-section img {
-   width: 110%;
-   height: auto;
-   margin-top: 20px;
-   margin-left: -10px;
-}
 
 .grille {
    display: grid;
@@ -120,10 +114,6 @@ section img {
    margin-left: 200px;
    font-family: 'Arial', sans-serif, monospace;
    color: #7a2d1f;
-
-
-
-
 }
 
 
@@ -157,7 +147,16 @@ footer {
 }
 
 
+.agenda img{
+   border-radius: 10px;
+}
 
+
+.agenda img:active{
+   transform: scale(2);
+  position: absolute;
+    z-index: 9999;
+ }
 
 
 
