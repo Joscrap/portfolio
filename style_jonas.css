@@ -16,16 +16,17 @@ body {
     padding: 10%;
 
 }
+.div_1{
+    border-radius: 30px;
+}
 .section_1{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     background: rgba(224, 221, 255, 0.331);
     border-radius: 30px;
-    box-shadow: #f02a2a;
-    margin-left: 60px;
-    margin-right: 60px;
-
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.section_1 img{
+    padding: 0px;
 }
 
 .section_1 p {
@@ -39,14 +40,10 @@ body {
 }
 
 .section_2{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     background: rgba(224, 221, 255, 0.331);
     border-radius: 30px;
-    box-shadow: #2e2e2e 60px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .section_2 p {
@@ -97,8 +94,8 @@ section h2{
 }
 
 footer {
-    text-align: left;
-    color: rgb(0, 0, 0);
+    text-align: center;
+    color: rgb(255, 255, 255);
     background-color:navy;
 }
 
@@ -176,6 +173,7 @@ header p{
 .scroll{
     background-color: rgb(109, 201, 248);
     border-radius: 30px;
+    box-shadow: 0px 0px 100px rgb(161, 224, 255);
 }
 .div_lundi1{
     flex: 1 1 200px;
@@ -204,6 +202,8 @@ header p{
     border-radius: 30px;
     margin: 0;
     background: rgba(161, 224, 255, 0.445);
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 .div_vendredi1{
     flex: 1 1 200px;
@@ -222,9 +222,13 @@ header p{
 }
 .scroll h2{
     color: #ffffff;
+    margin-left: 20px;
+    font-size: 50px;
 }
 .scroll{
-    background-color:  rgba(224, 221, 255, 0.331);;
+    background-color:  rgba(224, 221, 255, 0.331);
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .image_1epi{
     margin-top: 75px;
@@ -262,8 +266,8 @@ header p{
 }
 
 .photos img {
-    width: 200px;
-    height: auto;
+    width: 190px;
+    height: 190px;
     border-radius: 25px;
     margin-left: 60px;
     margin-top: 75px;
