@@ -2,8 +2,26 @@ body {
     background: #6d0f0f;
 }
 header h1 {
-    color: white;
+    color: #e6daa9;
     text-align: center;
     font-family :'Impact', Fantasy , monospace;
     font-size: 100px;
+}
+.btn-apropo {
+    color: #e6daa9;
+    background-color: #6d0f0f;
+    border: 2px #e6daa9 solid;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 15px;
+    margin-left: 750px ;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+.btn-apropo:hover { 
+    color: #6d0f0f;
+    background-color: #e6daa9;
+}
+main p {
+    color: #e6daa9;
 }
