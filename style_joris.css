@@ -200,7 +200,7 @@
 
         .semaine {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             gap: 40px;
         }
 
@@ -210,6 +210,7 @@
             padding: 15px;
             border-radius: 10px;
             margin: 0;
+            display: flex;
         }
 
         footer {
@@ -250,3 +251,4 @@
     content: "";
     display: block;
 }
+
