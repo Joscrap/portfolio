@@ -1,150 +1,221 @@
 header h1 {
-    color: #45773a;
-    text-align: center;
-    font-family :'Helvetica', Serif , monospace;
-    font-size: 100px;
-    margin-top: 10px;
-    border-left: 20px #45773a double
-    padding-left: 20px ; 
-
-
-
+   color: #e6daa9;
+   text-align: center;
+   font-family :'Impact', Fantasy , monospace;
+   font-size: 75px;
+   margin-top: 10px;
+   border-left: 20px #e6daa9 double;
+   margin-left: 60px;
+   padding-left: 5px;
 }
-
-
-
 .bouton-accueil {
-     font-size: 18px;
-    background: #45773a; 
-    border: none;
-    border-radius: 100px;
-    padding: 5px 12px;
-    cursor: pointer;
-    color: white;
-    transition: transform 0.1s ease;
-    text-decoration: none;
-    margin-top: 1px;
-    transition: background-color 0.5s, color 0.5s ; 
+    font-size: 18px;
+   background: transparent;
+   border: #e6daa9 1px solid;
+   border-radius: 100px;
+   padding: 5px 12px;
+   cursor: pointer;
+   color: #e6daa9;
+   transition: transform 0.1s ease;
+   text-decoration: none;
+   margin-top: 1px;
+   transition: background-color 0.5s, color 0.5s ;
+   font-family: 'Arial', sans-serif, monospace;
 }
+
+.inline {display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+
+}
+   
 
 
 
 .bouton-accueil:hover {
-    background-color: #4154fd;
- cursor: pointer;
- transform: translateX(-10px); 
-    
+   background-color: #e6daa9;
+cursor: pointer;
+color: black;
+backdrop-filter: blur(6.5px);
 }
 
+.bouton-moi {
+   font-size: 18px;
+   background: transparent;
+   border: #e6daa9 1px solid;
+   border-radius: 100px;
+   padding: 5px 12px;
+   cursor: pointer;
+   color: #e6daa9;
+   text-decoration: none;
+   margin-top: 20px;
+   margin-left: 30px;
 
-
-aside {
-    text-align: right;
-    margin-top: 15px;
 }
-
-
-
-main {
-    color: #ffffff;
- }  
- 
- 
-
-body {
-    background-color: #e0e2c1;
+.bouton-moi:hover { 
+    transition: background-color 0.5s, color 0.5s ;
+    color: #6d0f0f;
+    border: #6d0f0f 1px solid;
+    background-color: #e6daa9;
  }
 
 
 
-section{
-    background-color: #45773a;
-    border-radius: 10px;
-    height: 5000px;
-    width: 1000px;
-    margin-top: 250px;
-    margin-left: 380px;
-    }
 
-section h2 {
-    font-family:'', sans-serif, monospace;
-    text-align: center;
-    padding-top: 50px;
-}
-section h3 {
-    font-family:'Arial', sans-serif, monospace;
-    text-align: center;
+main {
+   color: #ffffff;
 } 
-article h4 {
-    font-family:'Century Gothic', sans-serif, monospace;
-   text-align: left;
-   margin-top: 60px;
-   margin-left: 10px;
-   font-size: 18px;
+
+
+body {
+  background: #6d0f0f;
 }
 
 
-article  p {
-    font-family:'Arial', sans-serif, monospace;
-    text-align: left;
-    margin-top: 20px;
-    font-size: 16px;
-    margin-left: 20px;
-    margin-right: 20px;
+
+
+
+
+section {
+   background: linear-gradient(to bottom right, rgb(196, 184, 121), rgb(197, 160, 79));
+   border-radius: 20px;
+   width: 1300px;
+   margin-top: 100px;
+   position: relative;
+   left: 150px;
+   height: 2000px;
+   }
+
+
+header h3 {
+   text-align: center;
+   font-family:'Arial', sans-serif, monospace;
+   color: #e6daa9;
 }
 
- 
+
+header h2 {
+   font-family:'Arial', sans-serif, monospace;
+   text-align: center;
+   padding-top: 50px;
+   color: #e6daa9;
+}
+
+
+section img {
+   width: 110%;
+   height: auto;
+   margin-top: 20px;
+   margin-left: -10px;
+}
+
+.grille {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+   padding: 40px;
+   cursor: pointer;
+   background-color: #45773a;
+   border-radius: 20px;
+   width: 1000px;
+   margin-left: 200px;
+   font-family: 'Arial', sans-serif, monospace;
+   color: #7a2d1f;
+
+
+
+
+}
+
+
+.agenda {
+background: rgba(255, 255, 255, 0.10);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.5px);
+border: 1px solid rgba(255, 255, 255, 0.28);
+   padding: 50px;
+   border-radius: 15px;
+   min-height: 200px;
+   padding: 20px;
+}
+
+
 footer {
-  text-align: center;
+ text-align: center;
 }
+
+
+
 
 
 
 #like-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   cursor: pointer;
 }
+
+
+
 
 
 
 #like-btn {
-    font-size: 28px;
-    background: #45773a; 
-    border: none;
-    border-radius: 50%;
-    padding: 15px;
-    cursor: pointer;
-    color: white;
-    transition: transform 0.1s ease;
+   font-size: 28px;
+   background: #e6daa9;
+   border: none;
+   border-radius: 50%;
+   padding: 15px;
+   cursor: pointer;
+   color: white;
+   transition: transform 0.1s ease;
+   cursor: pointer;
 }
+
+
 
 
 #like-btn:active {
-    transform: scale(1.2);
+   transform: scale(1.2);
+   cursor: pointer;
 }
+
+
+
 
 
 
 .like-float {
-    position: fixed;
-    bottom: 60px;
-    right: 40px;
-    font-size: 24px;
-    animation: floatUp 1s ease-out forwards;
+   position: fixed;
+   bottom: 60px;
+   right: 40px;
+   font-size: 24px;
+   animation: floatUp 1s ease-out forwards;
+   cursor: pointer;
 }
+
+
+
 
 
 
 @keyframes floatUp {
-    0% { opacity: 1; transform: translateY(0) scale(1); }
-    100% { opacity: 0; transform: translateY(-120px) scale(1.8); }
+   0% { opacity: 1; transform: translateY(0) scale(1); }
+   100% { opacity: 0; transform: translateY(-120px) scale(1.8); }
 }
+
+
+
 
 
 
 main h2 {
-    margin-top: -150px;
+   margin-top: -150px;
 }
+
+
+
 
 

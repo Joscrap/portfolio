@@ -1,0 +1,9 @@
+body {
+    background: #6d0f0f;
+}
+header h1 {
+    color: white;
+    text-align: center;
+    font-family :'Impact', Fantasy , monospace;
+    font-size: 100px;
+}
